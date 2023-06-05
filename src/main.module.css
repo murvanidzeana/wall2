@@ -1,0 +1,189 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+
+.conteiner{
+    width: 1180px;
+    height: 493px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    margin-left: 30px;
+     margin-top: 30px;
+    padding-left: 32px;
+    padding-top: 26px;
+    
+}
+
+.wallofshame{
+    width: 109px;
+    height: 22px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: 170px;
+    margin-top: -23px;
+}
+.members{
+    margin-top:10px;
+}
+
+input{
+    width:300px;
+    height: 48px;
+    border-radius: 5px;
+    margin-left: 27px;
+    padding-left: 15px;
+    border-color: rgba(226, 225, 229, 1);
+   
+}
+button{
+    width: 80px;
+    height: 34px;
+    background: #F64E60;
+    border-radius: 6px;
+    margin-left: 35px;
+    border-style: none;
+    color:  #FFFFFF;
+    
+}
+.input_button{
+    padding-left:117px;
+    padding-top: -10px;
+ 
+}
+::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(210, 210, 210, 1);
+
+
+}
+
+
+h1{
+   font-size: 20px;
+    font-weight: 500;
+    color: 
+    rgba(33, 33, 33, 1);
+    width: 198px;
+    height: 22px;
+
+    
+}
+h3{
+   font-size:11px;
+    font-weight: 500;
+
+    color: 
+    rgba(181, 181, 195, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.name{
+    height: 43px;
+    width: 1120px;
+    margin-top: 20px;
+  
+
+background: #F3F6F9;
+border-radius: 6px;
+display: flex;
+align-items: center;
+gap:250px
+}
+
+.name h3 {
+
+    
+        font-weight: 600;
+        font-size: 12px;
+        color: #B5B5C3;
+
+
+    :first-child{
+        color:  #464E5F;
+        padding-left: 10px;
+    }
+
+    :last-child{
+        padding-left: 200px;
+    }
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+    
+
+
+}
+.excuse_list{
+    padding-left: 250px;
+    color: rgba(181, 181, 195, 1);
+    font-weight: 500;
+    font-size: 13px;   
+    line-height: 20px;
+}
+.name_list {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+     color:rgba(70, 78, 95, 1);
+
+}
+
+
+ul{
+    padding-top: 15px;
+
+}
+
+
+
+
+li{
+    position: relative;
+    display: block;
+    padding-top: 15px;
+    
+    
+}
+
+.increase{
+    width: 92px;
+height: 34px;
+color:
+rgba(27, 197, 189, 1);
+
+background-color: #C9F7F5;
+border-radius: 6px;
+margin-left: 647px;
+margin-top:25px ;
+font-size: 12px;
+font-weight: 600;
+}
