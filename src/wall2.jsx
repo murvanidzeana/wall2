@@ -1,50 +1,53 @@
-import styles from './main.module.css'
+import React,{useState} from 'react'
+import './wall2.css'
 
 
-
-
-function add(){
-    var ul = document.getElementById("addname");
-   
-    var name = document.getElementById("name");
-    
-    var li = document.createElement("li");
-   
-    li.setAttribute('id', name.value);
-   
-    li.appendChild(document.createTextNode(name.value));
-    
-    ul.appendChild(li)
-
-
-    var ul = document.getElementById("addexcuse");
-    
-    var excuse = document.getElementById("excuse");
-    
-    var li = document.createElement("li");
-  
-    li.setAttribute('id', excuse.value);
-   
-    li.appendChild(document.createTextNode(excuse.value));
-   
-    ul.appendChild(li)
-
-  
-
-
-}
 
 
 export default function Wall(){
-    return(
-        <div className={styles.conteiner}>
 
-           <div className={styles.header}>
-                 <div className={styles.wallofshame}>
+    const[todos,setTodos]=useState([]);
+    const[todos1,setTodos1]=useState([])
+    
+    const[newTodoItem,setnewTodoItem]=useState('')
+    const[newTodoItem1,setnewTodoItem1]=useState('')
+
+    
+    const addNewTodo =()=>{
+        const newItem={
+          title:newTodoItem,
+          id:todos.length+1
+        }
+        const newItem1={
+            title:newTodoItem1,
+            id:todos1.length+1
+          }
+         setTodos((prev)=> [newItem,...prev])
+         setTodos1((prev)=> [newItem1,...prev])
+        //  todoshi vidzaxeb newitems
+      }
+       
+
+     const[increase,setincrease]=useState(0)
+      const addIncrease =()=>{
+        setincrease((prev)=>prev+1)
+      }
+
+
+
+     
+
+    
+    return(
+        <div className="conteiner">
+
+           <div className="header">
+                 <div className="wallofshame">
+
 
                  <h1>wall of shame</h1>
 
-                 <div className={styles.members}> 
+                 <div className="members"> 
                  <h3>5 members</h3>
                  </div>
 
@@ -58,14 +61,14 @@ export default function Wall(){
 
              
 
-                <div className={styles.nav}>
+                <div className="nav">
 
 
-            <div className={styles.input_button}>
+            <div className="input_button">
                 
-                <input placeholder='Name' type='text' id='name'></input>
-                <input placeholder='Excuse'  type='text' id="excuse"></input>
-                <button type='button' onClick={add} >create</button>
+                <input placeholder='Name' type='text' onChange={(e)=>setnewTodoItem(e.target.value)} ></input>
+                <input placeholder='Excuse'  type='text' onChange={(e)=>setnewTodoItem1(e.target.value)}></input>
+                <button onClick={addNewTodo} type='button'  >create</button>
 
 
             </div>
@@ -93,34 +96,38 @@ export default function Wall(){
 
 
 
-           <div className={styles.name}>
+           <div className="name">
 
-             <h3>Name</h3>
+             <h3 className="first_child">Name</h3>
              <h3>Excuse</h3>
-             <h3>Count</h3>
+             <h3 className='last_child'>Count</h3>
 
            </div>
 
 
 
 
-           <div className={styles.list}>
+           <div className="list">
 
-         <div id="addname" className={styles.name_list}>
+         <div  className="name_list">
             <ul>
-                <li></li>
+            {todos.map((todo)=>(<li>{todo.title}</li>))}
             </ul>
          </div>
 
-         <div id="addexcuse" className={styles.excuse_list}>
+         <div  className="excuse_list">
              <ul>
-                <li></li>
+             {todos1.map((todo1)=>(<li>{todo1.title}</li>))}
             </ul>
+             
+            
 
          </div>
+
+         <div className={"count_list " }>{increase}</div>
            
 
-           <button className={styles.increase}>increase</button>
+           <button className="increase" onClick={addIncrease}>increase</button>
 
 
 

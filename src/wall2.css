@@ -1,8 +1,8 @@
 *{
     font-family: 'Poppins', sans-serif;
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+   
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .conteiner{
     width: 1180px;
@@ -13,12 +13,14 @@
      margin-top: 30px;
     padding-left: 32px;
     padding-top: 26px;
-    
+   
 }
 
 .wallofshame{
     width: 109px;
-    height: 22px;
+    height: 30px;
+ 
+   
 }
 
 .nav{
@@ -27,9 +29,9 @@
     margin-left: 170px;
     margin-top: -23px;
 }
-.members{
+/* .members{
     margin-top:10px;
-}
+} */
 
 input{
     width:300px;
@@ -43,7 +45,8 @@ input{
 button{
     width: 80px;
     height: 34px;
-    background: #F64E60;
+    background: 
+    rgba(246, 78, 96, 1);
     border-radius: 6px;
     margin-left: 35px;
     border-style: none;
@@ -65,37 +68,30 @@ button{
 
 
 h1{
-   font-size: 20px;
+   font-size: 25px;
     font-weight: 500;
     color: 
     rgba(33, 33, 33, 1);
-    width: 198px;
-    height: 22px;
+    width: 208px;
+    height: 40px;
+    
+    
 
     
 }
 h3{
-   font-size:11px;
+   font-size:13px;
     font-weight: 500;
 
     color: 
     rgba(181, 181, 195, 1);
+  
+   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.members{
+    margin-top: -11px;
+} 
 
 
 
@@ -105,7 +101,7 @@ h3{
 .name{
     height: 43px;
     width: 1120px;
-    margin-top: 20px;
+    margin-top: 30px;
   
 
 background: #F3F6F9;
@@ -120,18 +116,19 @@ gap:250px
     
         font-weight: 600;
         font-size: 12px;
-        color: #B5B5C3;
-
-
-    :first-child{
-        color:  #464E5F;
-        padding-left: 10px;
-    }
-
-    :last-child{
-        padding-left: 200px;
-    }
+       
+   
 }
+.first_child{
+    color:  #464E5F;
+   
+    padding-left: 10px;
+}
+.last_child{
+    padding-left: 230px;
+   
+}
+
 
 .list{
     display: flex;
@@ -155,6 +152,11 @@ gap:250px
 
      color:rgba(70, 78, 95, 1);
 
+}
+.count_list{
+    margin-left: 455px;
+    width: 100px;
+    
 }
 
 
@@ -182,7 +184,7 @@ rgba(27, 197, 189, 1);
 
 background-color: #C9F7F5;
 border-radius: 6px;
-margin-left: 647px;
+margin-left: 100px;
 margin-top:25px ;
 font-size: 12px;
 font-weight: 600;
